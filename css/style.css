@@ -1,40 +1,52 @@
 
 @import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
-body {
-    font-family: 'Poppins', sans-serif;
-    background: whitesmoke; /* backgroung color of entire body*/
+
+
+/*header style*/
+.header{
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+   }
+
+
+.description{
+    position: absolute;
+    top: 30%;
+    margin: auto;
+    padding: 2em;
+    
+}
+.description h1{
+ color:#F97300 ;
+ text-shadow: 1px 2px black;
+}
+.description p{
+ color:white;
+ font-size: 20px;
+ width: 50%;
+ line-height: 1.5;
+ text-shadow: 1px 1px black;
+}
+.description button{
+ border:1px  solid #F97300;
+ background:#F97300;
+ color:#fff;
 }
 
-p {
-    font-family: 'Poppins', sans-serif;
-    font-size: 1.1em;
-    font-weight: 300;
-    line-height: 1.7em;
-    color: black;
-}
 
-a,
-a:hover,
-a:focus {
-    color: inherit;
-    text-decoration: none;
-    transition: all 0.3s;
-}
+.navbar{ background:#F97300;}
 
-.navbar {
-    padding: 15px 10px;
-    background: #fff;
-    border: none;
-    border-radius: 0;
-    margin-bottom: 40px;
-    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
-}
+.nav-link , .navbar-brand{ color: #f4f4f4; cursor: pointer;}
 
-.navbar-btn {
-    box-shadow: none;
-    outline: none !important;
-    border: none;
-}
+.nav-link{ margin-right: 1em !important;}
+
+.nav-link:hover{ background: #f4f4f4; color: #f97300; }
+
+.navbar-collapse{ justify-content: flex-end;}
+
+.navbar-toggler{  background:#fff !important;}
+
 
 .line {
     width: 100%;
@@ -43,132 +55,47 @@ a:focus {
     margin: 40px 0;
 }
 
-/* ---------------------------------------------------
-    SIDEBAR STYLE
------------------------------------------------------ */
+/*place the navbar menu on the right we need to add a justify-content property and set it to flex-end*/
+.navbar-collapse{
+    justify-content: flex-end;
+   }
 
-.wrapper {
-    display: flex;
-    width: 100%;
-    align-items: stretch;
-}
-
-#sidebar {
-    min-width: 250px;
-    max-width: 250px;
-    background:rgb(64, 64, 64);
-    color: #fff;
-    transition: all 0.3s;
-}
-
-#sidebar.active {
-    margin-left: -250px;
-}
-
-#sidebar .sidebar-header {
-    padding: 20px;
-    background: rgb(64, 64, 64);
-}
-#list-unstyle.components {
-    padding: 20px 0;
-    border-bottom:1px
-}
-
-#sidebar ul p {
-    color: #fff;
-    padding: 10px;
-}
-
-#sidebar ul li a {
-    padding: 10px;
-    font-size: 1.1em;
-    display: block;
-}
-
-#sidebar ul li a:hover {
-    color: white;
-    background: rgb(64, 64, 64);
-}
-
-#sidebar ul li.active>a,
-a[aria-expanded="true"] {
-    color: #fff;
-    background: rgb(64, 64, 64);
-}
-
-a[data-toggle="collapse"] {
+/*About section */
+   .about{
+    margin: 4em 0;
+    padding: 1em;
     position: relative;
-}
-
-.dropdown-toggle::after {
+   }
+   .about h1{
+    color:#F97300;
+    margin: 2em;
+   }
+   .about img{
+    height: 100%;
+       width: 100%;
+       border-radius: 50%
+   }
+   .about span{
     display: block;
+    color: #888;
     position: absolute;
-    top: 50%;
-    right: 20px;
-    transform: translateY(-50%);
-    background: black;
-}
-
-ul ul a {
-    font-size: 0.9em !important;
-    padding-left: 30px !important;
-    background: rgb(64, 64, 64);
-}
-
-ul.CTAs {
-    padding: 20px;
-}
-
-ul.CTAs a {
-    text-align: center;
-    font-size: 0.9em !important;
-    display: block;
-    border-radius: 5px;
-    margin-bottom: 5px;
-}
-
-a.download {
-    background: #fff;
-    color: #rgb(255, 102, 0);
-}
-
-a.article,
-a.article:hover {
-    background: #rgb(102, 0, 255) !important;
-    color: #fff !important;
-}
-
+    left: 115px;
+   }
+   .about .desc{
+    padding: 2em;
+    border-left:4px solid #10828C;
+   }
+   .about .desc h3{
+    color: #10828C;
+   }
+   .about .desc p{
+    line-height:2;
+    color:#888;
+   }
 /* ---------------------------------------------------
-    CONTENT STYLE
+  footer STYLE
 ----------------------------------------------------- */
 
-#content {
-    width: 100%;
-    padding: 20px;
-    min-height: 100vh;
-    transition: all 0.3s;
-    color: black;
-    
-}
-
-h2 {
-    color: white;
-}
-
-
-/* ---------------------------------------------------
-                 MEDIAQUERIES
------------------------------------------------------ */
-
-@media (max-width: 768px) {
-    #sidebar {
-        margin-left: -250px;
-    }
-    #sidebar.active {
-        margin-left: 0;
-    }
-    #sidebarCollapse span {
-        display: none;
-    }
-
+.page-footer{
+    background:#F97300;  
 }
